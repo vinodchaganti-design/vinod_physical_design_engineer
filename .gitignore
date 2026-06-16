@@ -1,0 +1,4 @@
+.vercel
+.git-portable
+node_modules
+*.log

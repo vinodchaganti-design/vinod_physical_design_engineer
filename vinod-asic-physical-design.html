@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinod Kumar Chaganti | ASIC Physical Design Engineer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Vinod Kumar Chaganti, ASIC Physical Design Engineer specializing in RTL-to-GDSII flow, synthesis, floor-planning, CTS, STA, and sign-off.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body class="light-mode">
+  <!-- Nav Bar -->
+  <nav class="nav-bar clay-nav">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon">晶</span>
+        <span class="logo-text">Vinod Kumar Chaganti</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#flow">PD Flow</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Timeline</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button id="theme-toggle" class="theme-toggle-btn clay-btn-round" aria-label="Toggle Theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-text-content">
+          <div class="badge clay-badge">ASIC Physical Design</div>
+          <h1>Vinod Kumar Chaganti</h1>
+          <h2>ASIC Physical Design Engineer</h2>
+          <p class="hero-description">
+            Passionate physical design engineer with hands-on expertise implementing complete
+            <strong>RTL-to-GDSII</strong> workflows on advanced 28nm technologies. Proficient in floorplanning, timing
+            closure, STA, and sign-off verification using industry-leading EDA tools.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary clay-btn">Get In Touch</a>
+            <a href="Vinod_ch_PD_resume.pdf" class="btn btn-secondary clay-btn" download>Download CV</a>
+          </div>
+          <div class="contact-quick-links">
+            <a href="mailto:vinodkumarchowdary016@gmail.com" class="quick-link clay-btn-round" title="Email Me">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+            <a href="tel:+916302779250" class="quick-link clay-btn-round" title="Call Me">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/vinod-kumar-chaganti/" target="_blank" rel="noopener noreferrer"
+              class="quick-link clay-btn-round" title="LinkedIn Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <!-- Claymorphic 3D Chip Display -->
+          <div class="clay-chip-container">
+            <div class="clay-chip">
+              <div class="chip-pins top-pins"><span></span><span></span><span></span><span></span><span></span></div>
+              <div class="chip-pins bottom-pins"><span></span><span></span><span></span><span></span><span></span></div>
+              <div class="chip-pins left-pins"><span></span><span></span><span></span><span></span><span></span></div>
+              <div class="chip-pins right-pins"><span></span><span></span><span></span><span></span><span></span></div>
+              <div class="chip-core">
+                <div class="chip-die">
+                  <span class="die-label">ASIC</span>
+                  <div class="die-pattern"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Summary / About Section -->
+    <section id="about" class="about-section scroll-offset">
+      <div class="container">
+        <div class="section-header">
+          <h2>Professional Summary</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="clay-card about-card">
+          <div class="about-grid">
+            <div class="about-icon-box clay-btn-round">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="15" x2="23" y2="15"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="15" x2="4" y2="15"></line>
+              </svg>
+            </div>
+            <div class="about-text">
+              <p>
+                As an entry-level ASIC Physical Design Engineer with 8 months of intensive hands-on training and
+                real-world project implementation, I specialize in the complete <strong>RTL-to-GDSII</strong> flow using
+                <strong>28nm technology</strong>.
+              </p>
+              <p>
+                My experience covers the entirety of the backend Physical Design flow, and I am highly proficient with
+                industry-standard EDA tools from Cadence and Synopsys. From Initial Synthesis and Logic optimization, to
+                Floor-planning, Power planning, CTS, Routing, STA, and final Sign-off verification, I construct
+                high-performance, congestion-free, and DRC/LVS-clean silicon designs.
+              </p>
+              <div class="highlight-stats">
+                <div class="stat-item clay-card">
+                  <span class="stat-number">28nm</span>
+                  <span class="stat-label">Technology Focus</span>
+                </div>
+                <div class="stat-item clay-card">
+                  <span class="stat-number">400K+</span>
+                  <span class="stat-label">Max Cell Density</span>
+                </div>
+                <div class="stat-item clay-card">
+                  <span class="stat-number">18 Macros</span>
+                  <span class="stat-label">Intensive Training</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive RTL-to-GDSII Flow Visualizer -->
+    <section id="flow" class="flow-section scroll-offset">
+      <div class="container">
+        <div class="section-header">
+          <h2>Physical Design Flow</h2>
+          <p class="section-subtitle">Click on each stage to explore my core technical competencies and practical
+            project implementation.</p>
+          <div class="underline"></div>
+        </div>
+
+        <div class="flow-layout">
+          <!-- Flow Navigation Timeline (Vertical/Horizontal Clay Pills) -->
+          <div class="flow-timeline-container">
+            <div class="flow-timeline">
+              <button class="flow-step-btn clay-btn active" data-stage="synthesis">
+                <span class="step-num">01</span> Synthesis
+              </button>
+              <button class="flow-step-btn clay-btn" data-stage="floorplan">
+                <span class="step-num">02</span> Floorplanning
+              </button>
+              <button class="flow-step-btn clay-btn" data-stage="placement">
+                <span class="step-num">03</span> Placement
+              </button>
+              <button class="flow-step-btn clay-btn" data-stage="cts">
+                <span class="step-num">04</span> CTS
+              </button>
+              <button class="flow-step-btn clay-btn" data-stage="routing">
+                <span class="step-num">05</span> Routing
+              </button>
+              <button class="flow-step-btn clay-btn" data-stage="sta">
+                <span class="step-num">06</span> Timing/STA
+              </button>
+              <button class="flow-step-btn clay-btn" data-stage="verification">
+                <span class="step-num">07</span> Verification
+              </button>
+            </div>
+          </div>
+
+          <!-- Stage Details Display Panel -->
+          <div class="flow-details-panel clay-card">
+            <div id="flow-content-synthesis" class="flow-stage-content active">
+              <h3>Logic Synthesis & Constraint Setup</h3>
+              <div class="tag-row">
+                <span class="badge clay-badge">Cadence Genus</span>
+                <span class="badge clay-badge">Synopsys Design Compiler</span>
+                <span class="badge clay-badge">SDC Constraints</span>
+              </div>
+              <p>
+                Logic synthesis translates the register-transfer level (RTL) code into a technology-mapped gate-level
+                netlist. I perform:
+              </p>
+              <ul>
+                <li><strong>Logic Synthesis & Optimization:</strong> Timing/power/area trade-offs targeting specific
+                  frequencies.</li>
+                <li><strong>Constraint Setup:</strong> Developing Synopsys Design Constraints (SDC) including clocks,
+                  generated clocks, input/output delays, false paths, and multi-cycle paths.</li>
+                <li><strong>Design Implementation:</strong> Synthesized critical timing paths for block "RP-TOP" using
+                  Genus and high-complexity 400K-cell "TILE" using Design Compiler (DC Shell).</li>
+              </ul>
+            </div>
+
+            <div id="flow-content-floorplan" class="flow-stage-content">
+              <h3>Floorplanning & Power Planning</h3>
+              <div class="tag-row">
+                <span class="badge clay-badge">Macro Placement</span>
+                <span class="badge clay-badge">Power Grid Design</span>
+                <span class="badge clay-badge">IR Drop Compliance</span>
+              </div>
+              <p>
+                Creating a robust physical layout floorplan to optimize block area and guarantee reliable power
+                distribution. Experience includes:
+              </p>
+              <ul>
+                <li><strong>Macro Placement:</strong> Placed 6 macros in 'RP-TOP' and 18 macros in 'TILE' hierarchical
+                  floorplans to minimize routing congestion and reduce critical wire lengths.</li>
+                <li><strong>Power Grid Design (PG):</strong> Built multi-layer PG mesh configurations for power and
+                  ground routing across 9 metal layers (M1-M9).</li>
+                <li><strong>IR Drop Optimization:</strong> Designed grids to satisfy electromigration (EM) and IR drop
+                  limits, ensuring stable supply voltages across all standard cells and macro domains.</li>
+              </ul>
+            </div>
+
+            <div id="flow-content-placement" class="flow-stage-content">
+              <h3>Cell Placement & Congestion Mitigation</h3>
+              <div class="tag-row">
+                <span class="badge clay-badge">Standard Cell Placement</span>
+                <span class="badge clay-badge">Congestion Screens</span>
+                <span class="badge clay-badge">Weight Preferences</span>
+              </div>
+              <p>
+                Positioning standard cells while managing design density and preventing routing congestion. Key
+                practices:
+              </p>
+              <ul>
+                <li><strong>Density Optimization:</strong> Used partial blockages, density bounds, and cell padding to
+                  distribute cells away from high-density hotspots.</li>
+                <li><strong>Path Optimization:</strong> Implemented custom SDC path groups and cell weight preferences
+                  to prioritize setup timing closure during the placement stage.</li>
+                <li><strong>Congestion Management:</strong> Successfully resolved aggressive routing congestion in a
+                  400K+ cell block using strategic density screens.</li>
+              </ul>
+            </div>
+
+            <div id="flow-content-cts" class="flow-stage-content">
+              <h3>Clock Tree Synthesis (CTS)</h3>
+              <div class="tag-row">
+                <span class="badge clay-badge">Clock Skew Control</span>
+                <span class="badge clay-badge">Clock Latency</span>
+                <span class="badge clay-badge">Synopsys ICC2</span>
+              </div>
+              <p>
+                Building a low-skew clock distribution network to supply clock signals to all registers. Tasks include:
+              </p>
+              <ul>
+                <li><strong>Balanced Clock Trees:</strong> Synthesized clock networks in Synopsys ICC2, using custom
+                  buffer/inverter sets to meet latency budgets.</li>
+                <li><strong>Skew & Latency Control:</strong> Satisfied skew target constraints across multiple clock
+                  domains in "RP-TOP" design.</li>
+                <li><strong>Crosstalk & Noise Control:</strong> Applied shielding rules and non-default routing (NDR)
+                  rules to critical clock tree trunks.</li>
+              </ul>
+            </div>
+
+            <div id="flow-content-routing" class="flow-stage-content">
+              <h3>Global & Detail Routing</h3>
+              <div class="tag-row">
+                <span class="badge clay-badge">9-Layer Stack</span>
+                <span class="badge clay-badge">Pin Access</span>
+                <span class="badge clay-badge">DRC-Clean Closure</span>
+              </div>
+              <p>
+                Connecting physical signal terminals using the technology metal stack while satisfying design rules.
+                Focus areas:
+              </p>
+              <ul>
+                <li><strong>Layer Utilization:</strong> Routed signals utilizing 9 metal layers (M1-M9) in 'RP-TOP'.
+                </li>
+                <li><strong>Pin Access & DRC Fixes:</strong> Optimized standard cell pin access and solved post-route
+                  DRC violations using metal rerouting.</li>
+                <li><strong>Congestion Resolution:</strong> Prevented routing shorts and hot-spots in high-density
+                  blocks.</li>
+              </ul>
+            </div>
+
+            <div id="flow-content-sta" class="flow-stage-content">
+              <h3>Static Timing Analysis & ECO</h3>
+              <div class="tag-row">
+                <span class="badge clay-badge">STA (Setup/Hold)</span>
+                <span class="badge clay-badge">ECO Fixes</span>
+                <span class="badge clay-badge">WNS / TNS Closure</span>
+              </div>
+              <p>
+                Verifying timing performance across process corners and temperatures. Core capabilities:
+              </p>
+              <ul>
+                <li><strong>Multi-Corner STA:</strong> Validated setup and hold timing closure across process corners
+                  (SS, TT, FF) and voltage/temperature extremes.</li>
+                <li><strong>ECO Implementation:</strong> Applied Engineering Change Orders (ECOs) by inserting delay
+                  buffers for hold and sizing gates/swapping VT cells for setup optimization.</li>
+                <li><strong>WNS/TNS Closure:</strong> Effectively optimized Worst Negative Slack (WNS) and Total
+                  Negative Slack (TNS) to zero violations.</li>
+              </ul>
+            </div>
+
+            <div id="flow-content-verification" class="flow-stage-content">
+              <h3>Physical Verification & Sign-off</h3>
+              <div class="tag-row">
+                <span class="badge clay-badge">DRC / LVS / ERC</span>
+                <span class="badge clay-badge">Antenna Fixes</span>
+                <span class="badge clay-badge">GDS Tape-out</span>
+              </div>
+              <p>
+                Final sign-off check to confirm the layout matches the netlist schematic and meets foundry fabrication
+                rules:
+              </p>
+              <ul>
+                <li><strong>Design Rule Checking (DRC):</strong> Fixed spacing, width, and density rules for final GDS
+                  tape-out readiness.</li>
+                <li><strong>Layout Vs Schematic (LVS):</strong> Checked connectivity, transistor matching, and
+                  shorts/opens to achieve clean LVS status.</li>
+                <li><strong>Antenna Effect Fixes:</strong> Solved antenna ratio violations by inserting protection
+                  diodes and performing metal layer hops/rerouting.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Grid -->
+    <section id="skills" class="skills-section scroll-offset">
+      <div class="container">
+        <div class="section-header">
+          <h2>Technical Skills</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Group 1 -->
+          <div class="clay-card skill-card">
+            <h3>Physical Design Flow</h3>
+            <div class="skills-list">
+              <span class="skill-pill clay-badge">RTL-to-GDSII</span>
+              <span class="skill-pill clay-badge">Netlist-to-GDSII</span>
+              <span class="skill-pill clay-badge">Floor-planning</span>
+              <span class="skill-pill clay-badge">Power Planning</span>
+              <span class="skill-pill clay-badge">Placement</span>
+              <span class="skill-pill clay-badge">CTS</span>
+              <span class="skill-pill clay-badge">Routing</span>
+              <span class="skill-pill clay-badge">ECO</span>
+              <span class="skill-pill clay-badge">Sign-off</span>
+            </div>
+          </div>
+
+          <!-- Skill Group 2 -->
+          <div class="clay-card skill-card">
+            <h3>EDA Tools</h3>
+            <div class="skills-list">
+              <span class="skill-pill clay-badge">Cadence Genus</span>
+              <span class="skill-pill clay-badge">Synopsys ICC2</span>
+              <span class="skill-pill clay-badge">Synopsys Design Compiler (DC Shell)</span>
+            </div>
+          </div>
+
+          <!-- Skill Group 3 -->
+          <div class="clay-card skill-card">
+            <h3>Static Timing Analysis (STA)</h3>
+            <div class="skills-list">
+              <span class="skill-pill clay-badge">Setup & Hold Analysis</span>
+              <span class="skill-pill clay-badge">False Paths & Multi-cycle</span>
+              <span class="skill-pill clay-badge">WNS & TNS Closure</span>
+              <span class="skill-pill clay-badge">DRV Fixing</span>
+              <span class="skill-pill clay-badge">Multi-corner STA</span>
+            </div>
+          </div>
+
+          <!-- Skill Group 4 -->
+          <div class="clay-card skill-card">
+            <h3>Synthesis & Optimization</h3>
+            <div class="skills-list">
+              <span class="skill-pill clay-badge">Logic Synthesis</span>
+              <span class="skill-pill clay-badge">Constraint Development (SDC)</span>
+              <span class="skill-pill clay-badge">Power/Timing Trade-offs</span>
+              <span class="skill-pill clay-badge">Area Optimization</span>
+            </div>
+          </div>
+
+          <!-- Skill Group 5 -->
+          <div class="clay-card skill-card">
+            <h3>Physical Verification</h3>
+            <div class="skills-list">
+              <span class="skill-pill clay-badge">DRC</span>
+              <span class="skill-pill clay-badge">LVS</span>
+              <span class="skill-pill clay-badge">ERC</span>
+              <span class="skill-pill clay-badge">Antenna Rule Checking</span>
+              <span class="skill-pill clay-badge">Antenna Violation Fixing</span>
+            </div>
+          </div>
+
+          <!-- Skill Group 6 -->
+          <div class="clay-card skill-card">
+            <h3>Scripting & OS</h3>
+            <div class="skills-list">
+              <span class="skill-pill clay-badge">TCL Scripting</span>
+              <span class="skill-pill clay-badge">PD Automation</span>
+              <span class="skill-pill clay-badge">Linux / Unix</span>
+              <span class="skill-pill clay-badge">Windows</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Projects Section -->
+    <section id="projects" class="projects-section scroll-offset">
+      <div class="container">
+        <div class="section-header">
+          <h2>Key Projects</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="clay-card project-card">
+            <div class="project-header">
+              <span class="tech-stack-badge clay-badge">28nm Technology</span>
+              <h3>Physical Design Implementation – Block 'RP-TOP'</h3>
+            </div>
+
+            <div class="project-meta-grid">
+              <div class="meta-item clay-card">
+                <span class="meta-val">454 MHz</span>
+                <span class="meta-lbl">Target Frequency</span>
+              </div>
+              <div class="meta-item clay-card">
+                <span class="meta-val">70K</span>
+                <span class="meta-lbl">Standard Cells</span>
+              </div>
+              <div class="meta-item clay-card">
+                <span class="meta-val">6 Macros</span>
+                <span class="meta-lbl">Complexity</span>
+              </div>
+              <div class="meta-item clay-card">
+                <span class="meta-val">9 Layers</span>
+                <span class="meta-lbl">Metal Stack (M1–M9)</span>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <h4>Key Contributions:</h4>
+              <ul>
+                <li>Performed full RTL-to-GDSII flow, using Cadence Genus for logic synthesis with SDC constraints and
+                  Synopsys ICC2 for placing and routing.</li>
+                <li>Designed floorplan incorporating 6 macros and a robust 9-layer metal power grid structure to
+                  minimize congestion.</li>
+                <li>Conducted CTS to create low-skew clock distribution networks matching target latency budgets.</li>
+                <li>Resolved routing congestion hotspots through partial blockages, density bounds, and cell padding to
+                  produce clean routes.</li>
+                <li>Executed multi-corner timing closure (setup/hold) via timing analysis and ECO buffer insertion.</li>
+                <li>Passed physical verification checks (DRC, LVS, Antenna) using diode insertion and metal layer hops
+                  to prepare GDS for tape-out.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="clay-card project-card">
+            <div class="project-header">
+              <span class="tech-stack-badge clay-badge">28nm Technology</span>
+              <h3>High-Density Block Implementation – 'TILE'</h3>
+            </div>
+
+            <div class="project-meta-grid">
+              <div class="meta-item clay-card">
+                <span class="meta-val">588 MHz</span>
+                <span class="meta-lbl">Target Frequency</span>
+              </div>
+              <div class="meta-item clay-card">
+                <span class="meta-val">400K+</span>
+                <span class="meta-lbl">Standard Cells</span>
+              </div>
+              <div class="meta-item clay-card">
+                <span class="meta-val">18 Macros</span>
+                <span class="meta-lbl">Complexity</span>
+              </div>
+              <div class="meta-item clay-card">
+                <span class="meta-val">High Density</span>
+                <span class="meta-lbl">Design Layout</span>
+              </div>
+            </div>
+
+            <div class="project-details">
+              <h4>Key Contributions:</h4>
+              <ul>
+                <li>Led synthesis and full-flow PnR implementation of a high-complexity 400K-instance block using Design
+                  Compiler (DC Shell) and ICC2.</li>
+                <li>Managed hierarchical floor-planning for 18 macros and built robust power grids for electromigration
+                  (EM) and IR drop compliance.</li>
+                <li>Setup custom SDC path groups and weight preferences to focus optimization efforts on critical timing
+                  paths.</li>
+                <li>Addressed aggressive routing congestion with density screens, cell padding, and pin access
+                  optimization.</li>
+                <li>Identified and resolved post-route DRC violations and antenna effects using diode insertion and
+                  metal rerouting.</li>
+                <li>Conducted multi-corner STA to validate timing closure across SS/TT/FF process corners and
+                  temperature/voltage extremes.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Training & Education Section -->
+    <section id="education" class="education-section scroll-offset">
+      <div class="container">
+        <div class="section-header">
+          <h2>Training & Education</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker clay-btn-round">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="15" x2="23" y2="15"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="15" x2="4" y2="15"></line>
+              </svg>
+            </div>
+            <div class="timeline-content clay-card">
+              <span class="timeline-date">2024 - Present</span>
+              <h3>Advanced ASIC Physical Design Engineer Training</h3>
+              <p class="timeline-institution">Sumedha IT, Hyderabad</p>
+              <p>
+                Intensive, full-time program covering the complete RTL-to-GDSII backend flow. Topics: Logic Synthesis,
+                Floor-planning, Power Planning, Placement, CTS, Routing, Timing Closure (STA), and Physical
+                Verification.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker clay-btn-round">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+              </svg>
+            </div>
+            <div class="timeline-content clay-card">
+              <span class="timeline-date">2020 - 2024</span>
+              <h3>B.Tech in Electronics and Communication Engineering</h3>
+              <p class="timeline-institution">Sri Mittapalli College of Engineering</p>
+              <p class="timeline-gpa"><strong>CGPA: 7.13 / 10</strong></p>
+              <p>
+                Acquired foundational knowledge in semiconductor physics, VLSI design, digital signal processing,
+                electronic circuit design, and computer architecture.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker clay-btn-round">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+              </svg>
+            </div>
+            <div class="timeline-content clay-card">
+              <span class="timeline-date">2018 - 2020</span>
+              <h3>Intermediate (MPC)</h3>
+              <p class="timeline-institution">Sri Chaitanya Junior College, Telangana</p>
+              <p class="timeline-gpa"><strong>CGPA: 8.15 / 10</strong></p>
+              <p>
+                Specialized in Mathematics, Physics, and Chemistry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section scroll-offset">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get In Touch</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info">
+            <div class="clay-card info-card">
+              <div class="info-icon clay-btn-round">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="info-details">
+                <h4>Email</h4>
+                <a href="mailto:vinodkumarchowdary016@gmail.com">vinodkumarchowdary016@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="clay-card info-card">
+              <div class="info-icon clay-btn-round">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <div class="info-details">
+                <h4>Phone</h4>
+                <a href="tel:+916302779250">+91 6302779250</a>
+              </div>
+            </div>
+
+            <div class="clay-card info-card">
+              <div class="info-icon clay-btn-round">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <div class="info-details">
+                <h4>LinkedIn</h4>
+                <a href="https://linkedin.com/in/vinod-kumar-chaganti/" target="_blank"
+                  rel="noopener noreferrer">linkedin.com/in/vinod-kumar-chaganti</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="clay-card contact-form-card">
+            <h3>Send a Message</h3>
+            <form id="contact-form" action="#" method="POST">
+              <div class="form-group">
+                <label for="form-name">Name</label>
+                <input type="text" id="form-name" name="name" class="clay-input" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="form-email">Email</label>
+                <input type="email" id="form-email" name="email" class="clay-input" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" name="subject" class="clay-input" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" name="message" class="clay-input" rows="5"
+                  placeholder="Write your message here..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary clay-btn submit-btn">Send Message</button>
+            </form>
+            <div id="form-feedback" class="form-feedback-msg clay-card hidden"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Vinod Kumar Chaganti. All Rights Reserved.</p>
+      <p class="footer-note"> </p>
+    </div>
+  </footer>
+</body>
+
+</html>
