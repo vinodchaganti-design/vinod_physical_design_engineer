@@ -83,5 +83,4 @@ To run this portfolio locally on your machine:
 
 ## ✉️ Contact & Inquiries
 * **Email**: [vinodkumarchowdary016@gmail.com](mailto:vinodkumarchowdary016@gmail.com)
-* **Phone**: +91 6302779250
 * **LinkedIn**: [linkedin.com/in/vinod-kumar-chaganti](https://linkedin.com/in/vinod-kumar-chaganti/)
